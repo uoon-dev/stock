@@ -1,3 +1,20 @@
 <template>
-  <h1>The Portfolio Component</h1>
+  <div>
+
+  </div>
 </template>
+
+<script>
+  export default {
+  props: ['stock'],
+  data() {
+    return {
+      quantity: 0
+    }
+  },
+  methods: {
+    buyStock() {
+    }
+  }
+}  
+</script>

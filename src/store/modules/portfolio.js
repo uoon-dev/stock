@@ -1,10 +1,11 @@
 const state = {
-  funds: 10000,
-  stocks: []
+  stocks: [],
+  test: 'test'
 };
 
 const mutations = {
   'BUY_STOCK'(state, {stockId, quantity, stockPrice}) {
+    console.log(state.stocks);
     const record = state.stocks.find(element => element.id == stockId);
     if (record) {
       record.quantity += quantity;

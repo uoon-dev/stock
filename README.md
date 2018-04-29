@@ -1,8 +1,7 @@
-# stock trader 
-
 ## vue-cli
 
-> A Vue.js project
+> A Simple Stock Trader with vue.js
+> Clone Coding From Maximilian Schwarzmüller
 
 ### Build Setup
 

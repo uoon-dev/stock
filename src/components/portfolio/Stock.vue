@@ -1,7 +1,7 @@
 <template>
   <div class="col-sm-6 col-md-4">
     <div class="panel panel-info">
-      <div class="panel-panel-heading">
+      <div class="panel-panel-heading2">
         <h3 class="panel-title">
           {{ stock.name }}
           <small>(Price: {{ stock.price }} | Quantity: {{ stock.quantity }})</small>
@@ -60,8 +60,8 @@
   a {
     color: black;
   }
-  .panel-panel-heading {
-    background: rgba(150,255,150);
+  .panel-panel-heading2 {
+    background: rgba(50,105,150);
     padding: 10px 0 10px 10px;
   }
 </style>

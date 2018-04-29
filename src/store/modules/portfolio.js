@@ -28,6 +28,7 @@ const mutations = {
     state.funds += stockPrice * quantity;
   },
   'SET_PORTFOLIO' (state, portfolio) {
+    console.log('set portfolio');
     state.funds = portfolio.funds;
     state.stocks = portfolio.stockPortfolio ? portfolio.stockPortfolio : [];
   }

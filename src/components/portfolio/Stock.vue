@@ -1,6 +1,6 @@
 <template>
   <div class="col-sm-6 col-md-4">
-    <div class="panel panel-success">
+    <div class="panel panel-info">
       <div class="panel-panel-heading">
         <h3 class="panel-title">
           {{ stock.name }}
@@ -39,16 +39,18 @@
       }
     },
     methods: {
-      ...mapActions([
-        'sellStock'
-      ]),
+      ...mapActions({
+        placeSellOrder: 'sellStock'
+      }),
       sellStock() {
         const order = {
           stockId: this.stock.id,
           stockPrice: this.stock.price,
           quantity: this.quantity
         };
-        this.sellStock();
+        // mapActions에서 가져온 sellStock 함수 호출
+        this.placeSellOrder(order);
+        this.quantity = 0;
       }
     }
   }  

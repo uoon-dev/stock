@@ -1,4 +1,5 @@
 const state = {
+  funds: 10000,
   stocks: [],
   test: 'test'
 };
@@ -36,6 +37,8 @@ const actions = {
 
 const getters = {
   stockPortfolio (state, getters) {
+    /* 두번째 인자인 getters는 전체 store에서 가져온 getters이다.
+       여기선 기존 stock 데이터와 portfolio에 저장된 데이터의 id를 비교하기 위해 쓰였다. */
     return state.stocks.map(stock => {
       const record = getters.stocks.find(element => element.id == stock.id);
       return {
